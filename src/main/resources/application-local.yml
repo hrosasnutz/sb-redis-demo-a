@@ -1,0 +1,22 @@
+spring:
+  data:
+    redis:
+      client-type: lettuce
+      host: localhost
+      port: 6379
+  docker:
+    compose:
+      start:
+        command: up
+      stop:
+        command: down
+
+
+server:
+  port: 8080
+  
+
+logging:
+  level:
+    root: info
+    io.codegitters: debug
